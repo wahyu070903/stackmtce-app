@@ -1,7 +1,7 @@
 <nav class="flex flex-row items-center justify-between font-inter w-full h-16 px-6 bg-text text-white">
-    <div class="flex flex=row">
-        <img  class="" src="{{ asset('icons/Stackmtce-icon.svg') }}" alt="appicon">
-        <div class="hidden lg:flex flex-row items-center">
+    <div class="flex items-center">
+        <img  class="h-[34px] w-auto shrink-0" src="{{ asset('icons/Stackmtce-icon.svg') }}" alt="appicon">
+        <div class="hidden lg:flex flex-row items-center font-semibold">
             <a href="#" class="mx-2 py-1">
                 Categories
             </a>
@@ -19,11 +19,11 @@
     <div class="flex flex-row items-center">
         <div class="hidden sm:flex flex-row items-center">
              <a href="#" class="mx-2 py-1 relative group">
-                <p>About</p>
+                <p class="font-semibold">About</p>
                 <span class="absolute left-0 bottom-0 h-[1px] w-full bg-white scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
             </a>
             <a href="#" class="mx-2 py-1 relative group">
-                <p>Login</p>
+                <p class="font-semibold">Login</p>
                 <span class="absolute left-0 bottom-0 h-[1px] w-full bg-white scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
             </a>
         </div>
