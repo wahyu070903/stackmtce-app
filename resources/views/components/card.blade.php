@@ -9,7 +9,7 @@
                 <span class="px-1 mx-2">></span>
                 <p>ROBOTICS</p>
             </div>
-            <p class="px-1 py-0.5 border-2 border-subPurple text-xs">
+            <p class="hidden px-1 py-0.5 border-2 border-subPurple text-xs">
                 FEATURED
             </p>
         </div>
