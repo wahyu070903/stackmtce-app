@@ -16,6 +16,8 @@
     </head>
     <body>
         <x-navbar></x-navbar>
+        
         <x-card></x-card>
+        <x-footer></x-footer>
     </body>
 </html>
