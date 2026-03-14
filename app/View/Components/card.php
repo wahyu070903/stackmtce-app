@@ -11,9 +11,19 @@ class card extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public $title;
+    public $description;
+    public $rTime;
+    public $date;
+    public $category;
+
+    public function __construct($title, $description, $rTime, $date, $category)
     {
-        //
+        $this->title = $title;
+        $this->description = $description;
+        $this->rTime = $rTime;
+        $this->date = $date;
+        $this->category = $category;
     }
 
     /**

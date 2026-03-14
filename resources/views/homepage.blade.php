@@ -33,7 +33,21 @@
                     FEATURED
                 </p>
                 <div class="flex justify-center mt-5">
-                    <x-card></x-card>
+                    <x-card title="dontknow" description="dontknow" r-time="12" date="dontknow" category="dontknow"></x-card>
+                </div>
+                <form class="__search_form">   
+                    <label for="search" class="block mb-2.5 text-sm font-medium text-heading sr-only ">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                            <img src="{{ asset('icons/Search-icon.svg') }}">
+                        </div>
+                        <input type="search" id="search" class="block w-full p-3 ps-9 bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand shadow-xs placeholder:text-body" placeholder="Search Something ..." required />
+                    </div>
+                </form>
+                <div class="grid grid-cols-1 md:grid-cols-3">
+                    @foreach ($posts as $post)
+                        <x-card title="dontknow" description="dontknow" r-time="12" date="dontknow" category="dontknow"></x-card>
+                    @endforeach
                 </div>
             </div>
         </main>
