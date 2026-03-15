@@ -1,6 +1,6 @@
 <nav class="flex flex-row items-center justify-between font-inter w-full h-16 px-6 bg-text text-white">
     <div class="flex items-center">
-        <img  class="h-[34px] w-auto shrink-0" src="{{ asset('icons/Stackmtce-icon.svg') }}" alt="appicon">
+        <img  class="h-8.5 w-auto shrink-0" src="{{ asset('icons/Stackmtce-icon.svg') }}" alt="appicon">
         <div class="hidden lg:flex flex-row items-center font-semibold ml-6">
             <a href="#" class="mx-4 py-1">
                 Electronics
@@ -23,11 +23,11 @@
         <div class="hidden sm:flex flex-row items-center">
              <a href="#" class="mx-2 py-1 relative group">
                 <p class="font-semibold">About</p>
-                <span class="absolute left-0 bottom-0 h-[1px] w-full bg-white scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
+                <span class="absolute left-0 bottom-0 h-px w-full bg-white scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
             </a>
             <a href="#" class="mx-2 py-1 relative group">
                 <p class="font-semibold">Login</p>
-                <span class="absolute left-0 bottom-0 h-[1px] w-full bg-white scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
+                <span class="absolute left-0 bottom-0 h-px w-full bg-white scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
             </a>
         </div>
         <button class="relative group flex flex-row items-center py-2 px-4 bg-secondary text-text font-semibold mx-5">
@@ -53,25 +53,35 @@
         </button>
     </div>
     <div class="flex flex-row items-start px-6 mt-12 gap-x-8">
-        <div class="__nav_button flex flex-col gap-y-4">
-            <a>
-                Electronics
+        <div class="__nav_button flex flex-col gap-y-2 border-r-2 border-black pr-4">
+            <a class="group active relative py-4" data-target="__electronics">
+                <span class="absolute top-0 left-0 h-0.5 w-full bg-text scale-x-0 origin-left transition-transform duration-300 group-[.active]:scale-x-100"></span>
+                <p>Electronics</p>
+                <span class="absolute bottom-0 left-0 h-0.5 w-full bg-text scale-x-0 origin-left transition-transform duration-300 group-[.active]:scale-x-100"></span>
             </a>
-            <a>
-                Mechanical
+            <a class="group relative py-4" data-target="__mechanical">
+                <span class="absolute top-0 left-0 h-0.5 w-full bg-text scale-x-0 origin-left transition-transform duration-300 group-[.active]:scale-x-100"></span>
+                <p>Mechanical</p>
+                <span class="absolute bottom-0 left-0 h-0.5 w-full bg-text scale-x-0 origin-left transition-transform duration-300 group-[.active]:scale-x-100"></span>
             </a>
-            <a>
-                Informatics
+            <a class="group relative py-4" data-target="__informatics">
+                <span class="absolute top-0 left-0 h-0.5 w-full bg-text scale-x-0 origin-left transition-transform duration-300 group-[.active]:scale-x-100"></span>
+                <p>Informatics</p>
+                <span class="absolute bottom-0 left-0 h-0.5 w-full bg-text scale-x-0 origin-left transition-transform duration-300 group-[.active]:scale-x-100"></span>
             </a>
-            <a>
-                Platform
+            <a class="group relative py-4" data-target="__contents">
+                <span class="absolute top-0 left-0 h-0.5 w-full bg-text scale-x-0 origin-left transition-transform duration-300 group-[.active]:scale-x-100"></span>
+                <p>Contents</p>
+                <span class="absolute bottom-0 left-0 h-0.5 w-full bg-text scale-x-0 origin-left transition-transform duration-300 group-[.active]:scale-x-100"></span>
             </a>
-            <a>
-                Contents
+            <a class="group relative py-4" data-target="__platform">
+                <span class="absolute top-0 left-0 h-0.5 w-full bg-text scale-x-0 origin-left transition-transform duration-300 group-[.active]:scale-x-100"></span>
+                <p>Platform</p>
+                <span class="absolute bottom-0 left-0 h-0.5 w-full bg-text scale-x-0 origin-left transition-transform duration-300 group-[.active]:scale-x-100"></span>
             </a>
         </div>
         <div class="flex flex-col m __nav_menus">
-            <div class="flex flex-col gap-y-4">
+            <div class="__electronics flex flex-col gap-y-4">
                 <a>Other</a>
                 <a>Basic Electronics</a>
                 <a>Sensors</a>
@@ -82,7 +92,7 @@
                 <a>Tips</a>
                 <a>Projects</a>
             </div>
-            <div class="hidden flex flex-col gap-y-4">
+            <div class="__mechanical hidden flex-col gap-y-4">
                 <a>Other</a>
                 <a>Basic Mechanical</a>
                 <a>Design</a>
@@ -90,11 +100,38 @@
                 <a>Tips</a>
                 <a>Projects</a>
             </div>
+            <div class="__informatics hidden flex-col gap-y-4">
+                <a>Other</a>
+                <a>Computer</a>
+                <a>C++</a>
+                <a>Python</a>
+                <a>Javascript</a>
+                <a>Web Development</a>
+                <a>App Development</a>
+                <a>Databases</a>
+                <a>Algorithms</a>
+                <a>DataStructures</a>
+                <a>Tips</a>
+                <a>Projects</a>
+            </div>
+            <div class="__platform hidden flex-col gap-y-4">
+                <a>Blog</a>
+                <a>Toolbox</a>
+                <a>Archives</a>
+                <a>Resources</a>
+            </div>
+            <div class="__contents hidden flex-col gap-y-4">
+                <a>Robotics</a>
+                <a>Electronics</a>
+                <a>Automation</a>
+                <a>Mechanical</a>
+                <a>Control Systems</a>
+                <a>Do it Yourself</a>
+            </div>
         </div>
     </div>
 </div>
 
-<style>
-
+<style> 
 
 </style>
